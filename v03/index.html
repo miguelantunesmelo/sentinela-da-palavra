@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sentinel - Non Nobis Domine</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="main">
+    <section class="hero">
+      <h1>Sentinel</h1>
+      <p class="subtitle">Guardião da Luz e da Palavra</p>
+      <p class="verse">"Non nobis, Domine, non nobis, sed nomini tuo da gloriam."</p>
+      <button id="bless-button">Receber Ânimo</button>
+      <p id="blessing" class="hidden"></p>
+      <button id="music-toggle">🎵 Tocar Música</button>
+    </section>
+  </div>
+
+  <audio id="epic-music" loop>
+    <source src="assets/non-nobis-domine.mp3" type="audio/mp3" />
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

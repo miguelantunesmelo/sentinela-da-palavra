@@ -1,0 +1,79 @@
+/* Fonte e reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+    background: linear-gradient(#0a0a0a, #1a1a1a);
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  #main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  .hero {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    color: #e0d8b0;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #c0b68a;
+  }
+  
+  .verse {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    color: #f0e6c8;
+  }
+  
+  button {
+    font-family: 'Cinzel', serif;
+    background: #3b2f1f;
+    color: #fff;
+    border: 2px solid #a38b62;
+    padding: 0.8rem 1.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: #5b4a2f;
+    box-shadow: 0 0 15px #a38b62;
+  }
+  
+  #blessing {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #e6d7a9;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
