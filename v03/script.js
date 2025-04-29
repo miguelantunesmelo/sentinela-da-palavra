@@ -1,14 +1,11 @@
 // 🌟 Frases e versículos com estilo Sentinel
 const frases = [
-    // Versículos clássicos
     "“Se Deus é por nós, quem será contra nós?” — Romanos 8:31",
     "“O Senhor é o meu pastor; nada me faltará.” — Salmo 23:1",
     "“Sede fortes e corajosos, não temais.” — Deuteronômio 31:6",
     "“Aquele que habita no esconderijo do Altíssimo, à sombra do Onipotente descansará.” — Salmo 91:1",
     "“Não temas, porque eu sou contigo.” — Isaías 41:10",
     "“O justo viverá pela fé.” — Habacuque 2:4",
-  
-    // Frases originais estilo templário
     "Levanta-te, guerreiro da luz. A batalha é tua, mas a vitória é do Altíssimo.",
     "Mesmo nas trevas, tua armadura resplandece com a chama da fé.",
     "Não és um eco — és uma trombeta do Reino, forjado para tempos de guerra.",
@@ -34,29 +31,6 @@ const frases = [
     // Animação de fade com GSAP
     gsap.fromTo(blessing, { opacity: 0 }, { opacity: 1, duration: 2 });
   }
-  
-  // Música épica
-  const music = document.getElementById("epic-music");
-  const musicToggle = document.getElementById("music-toggle");
-  let tocando = false;
-  
-  musicToggle.addEventListener("click", () => {
-    if (tocando) {
-      music.pause();
-      musicToggle.textContent = "🎵 Tocar Música";
-    } else {
-      music.play();
-      musicToggle.textContent = "⏸️ Pausar Música";
-    }
-    tocando = !tocando;
-  
-    // Anima botão com GSAP
-    gsap.fromTo(
-      musicToggle,
-      { scale: 1 },
-      { scale: 1.15, yoyo: true, repeat: 1, duration: 0.3 }
-    );
-  });
   
   // Botão de bênção
   document.getElementById("bless-button").addEventListener("click", novaFrase);
